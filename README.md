@@ -19,4 +19,4 @@ A detailed analysis of maritime data, leveraging capabilities of Google BigQuery
 
 ### Accessing the application
 
-- [UPDATE WHEN DEPLOYED]
+- https://spire-maritime.streamlit.app/ - [Missing Permission]
