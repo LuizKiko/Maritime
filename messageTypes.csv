@@ -1,0 +1,20 @@
+message_type,message
+1,AIS position - Class A
+2,AIS position - Class A
+3,AIS position - Class A
+4,Base Stations
+5,Vessel characteristics - Class A
+6,Addressed binary Message
+7,Binary acknowledge
+8,Binary broadcast Message
+9,Standard search and rescue aircraft position report
+10,Coordinated universal time and date inquiry
+11,Coordinated universal time/date response
+12,Addressed safety related Message
+14,Safety related broadcast Message
+15,Interrogation
+16,Assigned mode command
+17,Global navigation-satellite system broadcast binary Message
+18,AIS position - Class B
+20,Data link management Message
+21,Aids-to-navigation report
