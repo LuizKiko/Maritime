@@ -19,7 +19,7 @@ def relativeGeo(dfPortPolygons: pd.DataFrame, dfvesselInformation: pd.DataFrame,
         st.caption("Relative geolocation for ships is a crucial aspect of maritime navigation and safety. It involves determining the position of a ship relative to other nearby ships, landmasses, or navigational markers. This concept is essential in congested waterways or during complex maneuvers, such as docking or navigating through narrow channels. Relative geolocation helps in collision avoidance, maintaining safe distances, and executing coordinated movements in fleets or convoys. Advanced technologies like AIS (Automatic Identification System), radar, and GPS are often employed to obtain precise relative positions, enhancing maritime situational awareness and operational efficiency.")
         st.divider()
     with col2:
-        st.image(r"images\satelite.jpg")
+        st.image(r"images/satelite.jpg")
     
     #FILTERED CONTENT
     if vesselType != None:

@@ -18,7 +18,7 @@ def Messages(dfvesselInformation: pd.DataFrame, dfShipTypes: pd.DataFrame, dfPor
         st.caption("Vessels in the maritime industry refer to various types of watercraft used for different purposes at sea. These range from large cargo ships and oil tankers, which play a crucial role in global trade and energy transportation, to passenger ships like cruise liners and ferries. There are also specialized vessels such as fishing boats, tugboats, and research ships. Each type of vessel is uniquely designed for its specific function, whether it's transporting goods across oceans, carrying passengers, aiding in navigational tasks, or conducting maritime research and exploration. Vessels are the backbone of the maritime industry, facilitating a significant portion of international commerce and mobility.")
         st.divider()
     with col2:
-        st.image(r"images\vessel.jpg")
+        st.image(r"images/vessel.jpg")
     
     #FILTERED CONTENT
     if vesselType != None:

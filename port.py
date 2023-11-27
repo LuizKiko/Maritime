@@ -11,7 +11,7 @@ def PortsMap(dfPortPolygons: pd.DataFrame):
         st.caption("Designed to display various key metrics and geographical information about ports worldwide...")
         st.divider()
     with col2:
-        st.image(r"images\port.jpg")
+        st.image(r"images/port.jpg")
 
     def process_polygon_string(polygon_str):
         coords_str = polygon_str.replace('POLYGON ((', '').replace('))', '').split(', ')
