@@ -6,9 +6,9 @@ def Home():
         st.header("Luiz Francisco dos Santos")
         st.caption("CSM, CSPO, Agile driven and Data Enthusiast")
         st.divider()
-        st.write("Hello everyone, I would like to briefly introduce myself...")
-        st.write("My name Luiz and quite experienced in agile software development best practices, I am deeply committed to driving efficiency and innovation within our industry harnessing empirical processes to develop real and impactful solutions that enhance visibility, predictability, and overall quality to build a better future. I take pride in creating a collaborative environment where me and my colleagues can thrive.")
-        st.write("I am eager to connect and explore how my expertise can align with your goals and contribute to mutual success.")
+        st.write("Hello everyone, I'm Luiz, an experienced professional in agile software development and data enthiusiast.")
+        st.write("I'm deeply committed to driving efficiency and innovation in any projects that I am involved. By harnessing empirical processes, I develop real and impactful solutions that enhance visibility, predictability, and overall quality, aiming to build a better future. I take pride in fostering a collaborative environment where my colleagues and I can thrive.")
+        st.write("I am eager to connect and explore how my expertise can align with your goals, contributing to our mutual success")
     st.divider()
     with col2:
         st.image(r"images/luiz.jpg")
