@@ -21,7 +21,7 @@ def local_css(file_name):
 local_css("style.css")
 
 st.sidebar.header("Welcome to...")
-st.sidebar.image(r"images\spire_maritime.png")
+st.sidebar.image(r"images/spire_maritime.png")
 st.sidebar.markdown("___")
 
 dashboard = st.sidebar.radio(
