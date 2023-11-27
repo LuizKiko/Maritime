@@ -108,3 +108,6 @@ def Messages(dfvesselInformation: pd.DataFrame, dfShipTypes: pd.DataFrame, dfPor
         st.write('Future improvements could be:')
         st.caption('= Filter per dat to manage better the volume of data')
         st.caption('- Charts covering messages per Region and Rate of turn for example')
+    else:
+        st.write("Use the filters to create and display the dashboard")
+

@@ -54,3 +54,5 @@ def PortsMap(dfPortPolygons: pd.DataFrame):
                 columns = st.columns(5)
             with columns[i % 5]:  
                 st.metric(metricTitles[i], metricValues[i], metricValues[i] - metricAvg)
+    else:
+        st.write("Use the filters to create and display the dashboard")
