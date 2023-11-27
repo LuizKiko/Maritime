@@ -8,7 +8,7 @@ def PortsMap(dfPortPolygons: pd.DataFrame):
     col1, col2 = st.columns([10,1])
     with col1:
         st.subheader("Ports dashboard")
-        st.caption("Designed to display various key metrics and geographical information about ports worldwide...")
+        st.caption("Ports are vital economic gateways, serving as the primary points of entry and exit for international trade. They facilitate the efficient movement of goods between sea and land, supporting global supply chains and commerce.")
         st.divider()
     with col2:
         st.image(r"images/port.jpg")
