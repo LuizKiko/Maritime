@@ -1,6 +1,8 @@
 import streamlit as st
+from dashboard import dashboard
 
 def Home():
+    dashboard = None
     col1, col2 = st.columns([12,1])
     with col1:
         st.header("Luiz Francisco dos Santos")
