@@ -33,14 +33,14 @@ st.sidebar.markdown("___")
 
 process = st.sidebar.button("ANALYSE PROCESS SUMMARY", type="primary")
 if process == True:
-    dashboard = None
     Analyse()
+    dashboard = None
 
 luiz = st.sidebar.button("Luiz Francisco Dos Santos", type="secondary")
 st.sidebar.markdown("___")
 if luiz == True:
-    dashboard = None
     Home()
+    dashboard = None
     
 if dashboard == "Ports":
    PortsMap(dfPortPolygons) 
@@ -48,7 +48,8 @@ elif dashboard == "Vessels":
    Messages(dfAisMessages, dfShipTypes, dfPortPolygons)
 elif dashboard == "Relative Geolocation":
    relativeGeo(dfPortPolygons, dfAisMessages, dfShipTypes)
-
+else:
+    Home()
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
