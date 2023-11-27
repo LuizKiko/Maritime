@@ -39,8 +39,9 @@ if process == True:
 luiz = st.sidebar.button("Luiz Francisco Dos Santos", type="secondary")
 st.sidebar.markdown("___")
 if luiz == True:
-    Home()
     dashboard = None
+    Home()
+    
     
 if dashboard == "Ports":
    PortsMap(dfPortPolygons) 
