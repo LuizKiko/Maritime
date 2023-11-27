@@ -7,7 +7,7 @@ def Analyse():
         st.caption("How the work has been developed")
         st.divider()
     with col2:
-        st.image(r"images\analyse.jpg")
+        st.image(r"images/analyse.jpg")
     col1, col2, col3 = st.columns(3)
     with col1:
         inputs = """

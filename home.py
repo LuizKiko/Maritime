@@ -11,7 +11,7 @@ def Home():
         st.write("I am eager to connect and explore how my expertise can align with your goals and contribute to mutual success.")
     st.divider()
     with col2:
-        st.image(r"images\luiz.jpg")
+        st.image(r"images/luiz.jpg")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         skills = """
@@ -59,32 +59,32 @@ def Home():
     st.write("Technologies and Frameworks:")
     col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15 = st.columns(15)
     with col1:
-        st.image(r"images\seal-csm.png")
+        st.image(r"images/seal-csm.png")
     with col2:
-        st.image(r"images\jira.png")
+        st.image(r"images/jira.png")
     with col3:
-        st.image(r"images\confluence.png")
+        st.image(r"images/confluence.png")
     with col4:
-        st.image(r"images\github.png")
+        st.image(r"images/github.png")
     with col5:
-        st.image(r"images\figma.png")
+        st.image(r"images/figma.png")
     with col6:
-        st.image(r"images\seal-cspo.png")
+        st.image(r"images/seal-cspo.png")
     with col7:
-        st.image(r"images\mysql.png")
+        st.image(r"images/mysql.png")
     with col8:
-        st.image(r"images\python.png")
+        st.image(r"images/python.png")
     with col9:
-        st.image(r"images\camunda.png")
+        st.image(r"images/camunda.png")
     with col10:
-        st.image(r"images\miro.png")
+        st.image(r"images/miro.png")
     with col11:
-        st.image(r"images\streamlit.png")
+        st.image(r"images/streamlit.png")
     with col12:
-        st.image(r"images\powerbi.png")
+        st.image(r"images/powerbi.png")
     with col13:
-        st.image(r"images\plotly.png")
+        st.image(r"images/plotly.png")
     with col14:
-        st.image(r"images\fastAPI.png")
+        st.image(r"images/fastAPI.png")
     with col15:
-        st.image(r"images\pandas.png")
+        st.image(r"images/pandas.png")
