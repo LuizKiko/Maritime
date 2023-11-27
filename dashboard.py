@@ -27,7 +27,7 @@ st.sidebar.markdown("___")
 dashboard = st.sidebar.radio(
     "Please select the view that best fit your need:",
     ["Ports", "Vessels", 'Relative Geolocation'],
-    index=0
+    index=None
 )
 st.sidebar.markdown("___")
 
@@ -48,7 +48,8 @@ elif dashboard == "Vessels":
    Messages(dfAisMessages, dfShipTypes, dfPortPolygons)
 elif dashboard == "Relative Geolocation":
    relativeGeo(dfPortPolygons, dfAisMessages, dfShipTypes)
-
+else:
+    Home()
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
