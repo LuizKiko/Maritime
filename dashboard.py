@@ -33,12 +33,13 @@ st.sidebar.markdown("___")
 
 process = st.sidebar.button("ANALYSE PROCESS SUMMARY", type="primary")
 if process == True:
+    dashboard = None
     Analyse()
-    dashboard = ""
 
 luiz = st.sidebar.button("Luiz Francisco Dos Santos", type="secondary")
 st.sidebar.markdown("___")
 if luiz == True:
+    dashboard = None
     Home()
     
 if dashboard == "Ports":
