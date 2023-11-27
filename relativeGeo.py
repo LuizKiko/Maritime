@@ -108,8 +108,8 @@ def relativeGeo(dfPortPolygons: pd.DataFrame, dfvesselInformation: pd.DataFrame,
                     coords_str = polygon_str.replace('POLYGON ((', '').replace('))', '').split(', ')
                     return [[float(coord.split()[1]), float(coord.split()[0])] for coord in coords_str]
             
-            st.subheader("Surrounds per vessel")
-            st.caption("By vizualizing the surrounds ares near vessels and ports you can more efficient avoid accidents, provide assistence and calculate ETA based on the vessel speed.")
+            st.subheader("Surrounding per vessel")
+            st.caption("By vizualizing the surrounding areas near the vessels and ports you can more efficient avoid accidents, provide assistence and calculate ETA based on the vessel speed.")
 
             m = folium.Map(location=[0, 0], zoom_start=2, tiles='CartoDB dark_matter')
 

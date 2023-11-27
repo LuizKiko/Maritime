@@ -1,6 +1,11 @@
 from google.cloud import bigquery
 import pandas as pd
 from relativeGeo import relativeGeo
+import os
+from google.cloud.bigquery.client import Client
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'maritime-analytics-4bf31290c249.json'
+bq_client = Client()
 
 qShipTypes = "select st.shipType, count(st.shipType) FROM  `test_data.ship_types` AS st group by st.shipType;"
 qPortPolygons = "SELECT * FROM `maritime-analytics.test_data.port_polygons`;"

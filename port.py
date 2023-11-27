@@ -35,7 +35,7 @@ def PortsMap(dfPortPolygons: pd.DataFrame):
         dfFiltered['coordinates'] = dfFiltered['polygon'].apply(process_polygon_string)
         dfFiltered['multi_polygon_coords'] = dfFiltered['coordinates'].apply(lambda x: [x])
         
-        m = folium.Map(location=[0, 0], zoom_start=2, tiles='CartoDB dark_matter')
+        m = folium.Map(location=[0, 0], zoom_start=3, tiles='CartoDB dark_matter')
         for _, row in dfFiltered.iterrows():
             locode = "Locode: " + str(row['locode'])
             name = " | Port: " + str(row['name'])
@@ -45,7 +45,7 @@ def PortsMap(dfPortPolygons: pd.DataFrame):
                                             color='white', 
                                             weight=4,
                                             tooltip=tooltip).add_to(m)
-        folium_static(m, width=2000, height=800)
+        folium_static(m, width=2000, height=700)
         st.caption("Insights on comparing operations, can evolve into more in dept comparisson adding efficiency time based on vessels waiting time for example")
         st.divider()
         st.subheader("Count of ports and its delta comparing the reference with its category average")
