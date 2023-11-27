@@ -39,8 +39,8 @@ if process == True:
 luiz = st.sidebar.button("Luiz Francisco Dos Santos", type="secondary")
 st.sidebar.markdown("___")
 if luiz == True:
-    dashboard = None
     Home()
+    dashboard = None
     
     
 if dashboard == "Ports":
