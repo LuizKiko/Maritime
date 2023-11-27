@@ -40,7 +40,6 @@ luiz = st.sidebar.button("Luiz Francisco Dos Santos", type="secondary")
 st.sidebar.markdown("___")
 if luiz == True:
     Home()
-    dashboard = None
     
 if dashboard == "Ports":
    PortsMap(dfPortPolygons) 
@@ -49,6 +48,7 @@ elif dashboard == "Vessels":
 elif dashboard == "Relative Geolocation":
    relativeGeo(dfPortPolygons, dfAisMessages, dfShipTypes)
 else:
+    dashboard = None
     Home()
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
