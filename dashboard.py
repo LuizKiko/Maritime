@@ -49,9 +49,7 @@ elif dashboard == "Vessels":
    Messages(dfAisMessages, dfShipTypes, dfPortPolygons)
 elif dashboard == "Relative Geolocation":
    relativeGeo(dfPortPolygons, dfAisMessages, dfShipTypes)
-else:
-    Home()
-    
+
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
             <style>
