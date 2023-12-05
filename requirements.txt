@@ -6,3 +6,4 @@ folium==0.14.0
 streamlit-folium==0.16.0
 google-cloud==0.34.0
 google-cloud-bigquery==3.13.0
+google-cloud-secret-manager==2.16.4
