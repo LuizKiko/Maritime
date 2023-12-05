@@ -3,9 +3,20 @@ import pandas as pd
 from relativeGeo import relativeGeo
 import os
 from google.cloud.bigquery.client import Client
+import json
+from google.oauth2.service_account import Credentials
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'maritime-analytics-4bf31290c249.json'
-bq_client = Client()
+# Reconstruct credentials JSON from Streamlit secrets
+credentials_info = st.secrets['bigquery_credentials']
+credentials_json = json.dumps(credentials_info)
+
+# Load credentials from the JSON string
+credentials = Credentials.from_service_account_info(json.loads(credentials_json))
+
+# Use credentials directly with BigQuery client
+from google.cloud import bigquery
+client = bigquery.Client(credentials=credentials, project=credentials.project_id)
+
 
 qShipTypes = "select st.shipType, count(st.shipType) FROM  `test_data.ship_types` AS st group by st.shipType;"
 qPortPolygons = "SELECT * FROM `maritime-analytics.test_data.port_polygons`;"
