@@ -9,10 +9,9 @@ from google.oauth2.service_account import Credentials
 
 # Reconstruct credentials JSON from Streamlit secrets
 credentials_info = st.secrets['bigquery_credentials']
-credentials_json = json.dumps(credentials_info)
 
 # Load credentials from the JSON string
-credentials = Credentials.from_service_account_info(json.loads(credentials_json))
+credentials = Credentials.from_service_account_info(dict(credentials_info))
 
 # Use credentials directly with BigQuery client
 from google.cloud import bigquery
