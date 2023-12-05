@@ -39,7 +39,6 @@ qAisMessages = """SELECT *
                                         AND md.longitude IS NOT NULL)
                             LIMIT  1000; """
 
-dfShipTypes = pd.read_gbq(credentials=credentials, project=credentials.project_id, query=qShipTypes)
-dfPortPolygons = pd.read_gbq(credentials=credentials, project=credentials.project_id, query=qPortPolygons)
-dfAisMessages = pd.read_gbq(credentials=credentials, project=credentials.project_id, query=qAisMessages)
-
+dfShipTypes = pd.read_gbq(credentials=credentials, project_id=credentials.project_id, query=qShipTypes)
+dfPortPolygons = pd.read_gbq(credentials=credentials, project_id=credentials.project_id, query=qPortPolygons)
+dfAisMessages = pd.read_gbq(credentials=credentials, project_id=credentials.project_id, query=qAisMessages)
